@@ -10,15 +10,20 @@ for (i = 0; i < 101; i++) {
         var multi_3_5 = console.log("FizzBuzz")
 
     // stampa Fizz per i multipli di 3
-    } else if( i % 3 === 0 ) {
+    } else if( (i % 3 === 0) && (i !== 0) ) {
         var multi_3 = console.log("Fizz")
 
     // Stampa Buzz per i multipli di 5 
-    } else if ( i % 5 === 0) {
+    } else if ( ( i % 5 === 0) && (i !== 0) ) {
         var multi_5 = console.log("Buzz")
 
     // Stampa il numero (i) assoluto 
     } else {
         console.log(i)
     }
+
+    // Ho voluto mettere che zero non è ne pari ne dispari aggiungendo in ogni if che i !== 0
+    // Avrei potuto comunque partire da 1 semplificandomi la vita 
+    // Ad ogni modo cosi' mi sembrava piu corretto 
+
 }
